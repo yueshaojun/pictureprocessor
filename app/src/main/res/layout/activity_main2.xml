@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.paic.crm.picturehandle.Main2Activity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="点击清除"
+        android:id="@+id/btn_clear"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击使用"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_use"/>
+    <com.paic.crm.picturehandle.SignatureView
+        android:layout_width="match_parent"
+        android:id="@+id/vw_signature"
+        android:layout_height="500dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@id/btn_clear"
+        />
+
+</RelativeLayout>
